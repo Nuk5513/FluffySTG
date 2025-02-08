@@ -61,7 +61,6 @@
 	},
 /area/ruin/space/has_grav/nova/blackmarket)
 "aS" = (
-/obj/structure/closet/cardboard,
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8
 	},
@@ -84,6 +83,7 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
+/obj/structure/rack,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
@@ -102,6 +102,7 @@
 	pixel_x = 0;
 	pixel_y = -21
 	},
+/obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/nova/blackmarket)
 "bg" = (
@@ -149,6 +150,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/crowbar{
+	pixel_y = -3;
+	pixel_x = -7
+	},
 /turf/open/floor/iron/shuttle/exploration/oppinvcorner{
 	dir = 4
 	},
@@ -189,16 +194,8 @@
 /turf/open/floor/plating/reinforced,
 /area/ruin/space/has_grav/nova/blackmarket)
 "cd" = (
-/obj/structure/fans/tiny/forcefield,
-/obj/machinery/door/poddoor{
-	id = "blackmarket_shuttlebay_poddoors";
-	name = "dusty blast door"
-	},
-/obj/structure/marker_beacon/teal{
-	pixel_x = -16;
-	pixel_y = 0
-	},
-/turf/open/floor/plating/reinforced,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "ch" = (
 /obj/structure/broken_flooring/singular/directional/east{
@@ -234,15 +231,6 @@
 	},
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 9
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
 	},
 /obj/effect/turf_decal/trimline/dark_green/filled/corner,
 /obj/effect/turf_decal/trimline/dark/corner,
@@ -578,7 +566,6 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2{
 	pixel_y = 0
 	},
-/obj/item/storage/toolbox/guncase/nova/xhihao_large_case/bogseo,
 /obj/effect/spawner/random/mod/maint{
 	pixel_x = 5
 	},
@@ -599,6 +586,14 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
+"fB" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/fluff/fake_camera{
+	icon_state = "camera_off";
+	dir = 4
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 "fC" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4
@@ -656,6 +651,9 @@
 "ga" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/trash_pile,
+/obj/structure/marker_beacon/teal{
+	pixel_x = 16
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "ge" = (
@@ -713,13 +711,6 @@
 /obj/effect/turf_decal/trimline/dark/end{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/dark_green/corner,
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
-	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "hL" = (
@@ -728,10 +719,6 @@
 	pixel_x = -7
 	},
 /obj/machinery/cell_charger_multi/wall_mounted/directional/north,
-/obj/item/reagent_containers/cup/glass/waterbottle/relic{
-	pixel_x = 8;
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 1
 	},
@@ -744,6 +731,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/reagent_containers/cup/glass/bottle/bottleofnothing{
+	pixel_x = 8;
+	pixel_y = 6
+	},
 /turf/open/floor/iron/shuttle/exploration/side,
 /area/ruin/space/has_grav/nova/blackmarket)
 "hS" = (
@@ -800,8 +791,7 @@
 	},
 /obj/structure/noticeboard/directional/west,
 /obj/item/paper{
-	pixel_x = -31;
-	pixel_y = -6;
+	pixel_y = 0;
 	default_raw_text = "For the love of god <b>DO NOT</b> mine the asteroid the base is in!";
 	name = "PLEASE READ ME"
 	},
@@ -881,9 +871,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/textured_edge{
-	dir = 8
-	},
+/turf/open/floor/iron/white/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "iR" = (
 /obj/effect/turf_decal/siding/yellow{
@@ -908,13 +896,13 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/unres,
 /obj/effect/turf_decal/siding/dark_red/corner,
 /obj/effect/turf_decal/siding/dark_red/corner{
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/ruin/space/has_grav/nova/blackmarket)
 "ja" = (
@@ -1036,16 +1024,9 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/ruin/space)
 "kk" = (
-/obj/machinery/chem_dispenser{
-	pixel_x = -3
-	},
+/obj/machinery/chem_dispenser,
 /obj/structure/broken_flooring/plating/directional/north,
 /obj/machinery/light/small/red/dim/directional/north,
-/obj/item/paper/secretrecipe{
-	icon_state = "slipfull";
-	pixel_x = 10;
-	pixel_y = -4
-	},
 /obj/effect/decal/cleanable/cobweb{
 	pixel_y = 0
 	},
@@ -1075,9 +1056,6 @@
 	},
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 8
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
 	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -1109,7 +1087,6 @@
 /area/ruin/space/has_grav/nova/blackmarket)
 "lo" = (
 /obj/machinery/door/window/brigdoor/right/directional/west,
-/obj/item/ammo_casing/a357/spent,
 /obj/structure/closet/shuttle/engivent{
 	pixel_y = 27
 	},
@@ -1144,9 +1121,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 6
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
-	},
 /obj/effect/turf_decal/siding/dark_green/corner,
 /obj/structure/decorative{
 	anchored = 1;
@@ -1180,20 +1154,14 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
-	},
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 8
 	},
 /area/ruin/space/has_grav/nova/blackmarket)
 "mn" = (
-/obj/machinery/space_heater/wall_mounted/directional/south,
-/obj/effect/turf_decal/trimline/dark_red/filled/line,
-/obj/effect/turf_decal/trimline/dark/line,
-/turf/open/floor/iron/shuttle/exploration/side{
-	dir = 1
-	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/portable_atmospherics/scrubber,
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "mC" = (
 /obj/effect/turf_decal/trimline/dark_red/filled/line,
@@ -1216,20 +1184,13 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/machinery/space_heater,
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 8
 	},
 /area/ruin/space/has_grav/nova/blackmarket)
 "mT" = (
 /obj/structure/sign/calendar/directional/south,
-/obj/item/stack/sheet/iron{
-	pixel_y = -1;
-	pixel_x = 7
-	},
-/obj/item/crowbar{
-	pixel_y = -3;
-	pixel_x = -7
-	},
 /obj/effect/turf_decal/trimline/dark_red/filled/line,
 /obj/effect/turf_decal/trimline/dark/line,
 /turf/open/floor/iron/shuttle/exploration/side{
@@ -1255,6 +1216,12 @@
 	},
 /obj/effect/decal/cleanable/cobweb{
 	pixel_y = 0
+	},
+/obj/item/reagent_containers/cup/beaker/large{
+	list_reagents = list(/datum/reagent/drug/maint/tar = 100);
+	name = "large beaker of maintenance tar";
+	pixel_x = 0;
+	pixel_y = -4
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -1284,16 +1251,14 @@
 	dir = 1
 	},
 /obj/structure/marker_beacon/jade,
-/obj/machinery/modular_computer/preset/command,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/obj/item/radio/intercom/syndicate/freerange/directional/north,
+/obj/item/radio/intercom/syndicate/freerange/directional/north{
+	desc = "A custom-made SolFed-issue intercom used to transmit on all Nanotrasen frequencies. Particularly expensive."
+	},
+/obj/machinery/computer/camera_advanced,
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
 "nr" = (
-/obj/item/lead_pipe{
-	pixel_x = 12;
-	pixel_y = 14
-	},
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 8
 	},
@@ -1301,9 +1266,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/smooth_corner{
@@ -1455,10 +1417,6 @@
 "ph" = (
 /obj/structure/bed/maint,
 /obj/structure/grille/broken,
-/obj/item/toy/plush/moth{
-	pixel_y = 2;
-	pixel_x = 11
-	},
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 6
 	},
@@ -1468,6 +1426,10 @@
 /obj/effect/turf_decal/siding/dark_red/corner,
 /obj/effect/turf_decal/siding/dark_red/corner{
 	dir = 4
+	},
+/obj/item/disk/holodisk/ruin/space/solfed_outpost{
+	pixel_x = -3;
+	pixel_y = 0
 	},
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 1
@@ -1539,9 +1501,6 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 4
 	},
@@ -1580,6 +1539,13 @@
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron/shuttle/exploration/doubleside,
+/area/ruin/space/has_grav/nova/blackmarket)
+"qN" = (
+/obj/structure/transport/linear/tram/corner/southeast{
+	pixel_x = 32;
+	pixel_y = -6
+	},
+/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/nova/blackmarket)
 "rm" = (
 /obj/structure/broken_flooring/pile/directional{
@@ -1706,9 +1672,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
-	},
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 8
 	},
@@ -1802,11 +1765,14 @@
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
 "tv" = (
-/obj/docking_port/stationary/serenity2{
-	width = 20;
-	dheight = 0;
+/obj/docking_port/stationary{
+	name = "SolFed Docking Port";
 	height = 12;
-	dir = 1
+	dir = 4;
+	roundstart_template = /datum/map_template/shuttle/ruin/solfed_luxury;
+	shuttle_id = "serenity2_home";
+	width = 20;
+	dwidth = 12
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -1839,7 +1805,7 @@
 /area/ruin/space)
 "tP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall,
+/turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/nova/blackmarket)
 "tX" = (
 /turf/closed/mineral/random,
@@ -1871,7 +1837,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/dark_green/corner,
 /turf/open/floor/iron/dark/smooth_edge{
 	dir = 8
 	},
@@ -1934,7 +1899,6 @@
 	},
 /obj/effect/turf_decal/trimline/dark_green/filled/line,
 /obj/effect/turf_decal/trimline/dark/line,
-/obj/effect/turf_decal/siding/dark_green/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/textured,
@@ -2256,12 +2220,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 5
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "xy" = (
@@ -2319,7 +2277,6 @@
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
 "yp" = (
-/obj/structure/barricade/wooden/crude,
 /obj/machinery/door/airlock/external,
 /obj/effect/turf_decal/siding/dark_red/corner{
 	dir = 4
@@ -2336,6 +2293,7 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/ruin/space/has_grav/nova/blackmarket)
 "yt" = (
@@ -2365,7 +2323,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/dark_green/corner,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
@@ -2381,9 +2338,9 @@
 /obj/structure/fans/tiny,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/structure/broken_flooring/plating/directional/south,
-/obj/effect/mapping_helpers/airlock/unres,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/effect/mapping_helpers/airlock/locked,
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4,
 /turf/open/floor/iron/shuttle/exploration/hazard,
 /area/ruin/space/has_grav/nova/blackmarket)
 "zv" = (
@@ -2401,6 +2358,11 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/storage/bag/trash/filled{
+	pixel_x = 11;
+	pixel_y = 9
+	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/side,
 /area/ruin/space/has_grav/nova/blackmarket)
 "zw" = (
@@ -2429,9 +2391,6 @@
 	},
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 5
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 4
 	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -2519,6 +2478,15 @@
 	},
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/nova/blackmarket)
+"As" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/flora/rock/pile,
+/obj/structure/fluff/fake_camera{
+	icon_state = "camera_off";
+	dir = 8
+	},
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 "Ax" = (
 /obj/item/thermometer/pen{
 	pixel_y = 31
@@ -2526,7 +2494,7 @@
 /obj/machinery/suit_storage_unit/void_old/jetpack{
 	mask_type = /obj/item/clothing/mask/gas/sechailer/swat/spacepol;
 	helmet_type = null;
-	mod_type = /obj/item/mod/control/pre_equipped/policing;
+	mod_type = /obj/item/mod/control/pre_equipped/solfed;
 	suit_type = null;
 	storage_type = null
 	},
@@ -2586,9 +2554,6 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 4
-	},
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},
@@ -2601,9 +2566,7 @@
 	dir = 10
 	},
 /obj/machinery/light/dim/directional/west,
-/turf/open/floor/iron/white/textured_edge{
-	dir = 4
-	},
+/turf/open/floor/iron/white/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Bh" = (
 /obj/structure/chair/sofa/corp/right,
@@ -2617,6 +2580,18 @@
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/nova/blackmarket)
+"Bm" = (
+/obj/structure/fans/tiny/forcefield,
+/obj/machinery/door/poddoor{
+	id = "blackmarket_shuttlebay_poddoors";
+	name = "dusty blast door"
+	},
+/obj/structure/marker_beacon/teal{
+	pixel_x = 16;
+	pixel_y = 32
+	},
+/turf/open/floor/plating/reinforced,
+/area/ruin/space/has_grav/nova/blackmarket)
 "Bn" = (
 /obj/effect/turf_decal/trimline/dark_green/filled/corner{
 	dir = 1
@@ -2628,9 +2603,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/dark/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2679,6 +2651,10 @@
 	},
 /turf/open/floor/iron/white/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
+"BD" = (
+/obj/structure/grille,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 "BE" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4
@@ -2698,10 +2674,6 @@
 	dir = 4;
 	layer = 2
 	},
-/obj/item/stack/sheet/glass/fifty{
-	pixel_x = 7;
-	pixel_y = 12
-	},
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 8
 	},
@@ -2716,6 +2688,13 @@
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 4
 	},
+/area/ruin/space/has_grav/nova/blackmarket)
+"BY" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/marker_beacon/teal{
+	pixel_x = 16
+	},
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Ce" = (
 /obj/structure/table,
@@ -2732,6 +2711,12 @@
 	pixel_y = 7
 	},
 /obj/item/circuitboard/machine/ltsrbt,
+/obj/item/stock_parts/subspace/ansible,
+/obj/item/stack/ore/bluespace_crystal{
+	amount = 2;
+	pixel_x = 7;
+	pixel_y = 8
+	},
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},
@@ -2767,7 +2752,6 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
-/obj/structure/sign/poster/official/terragov/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -2813,6 +2797,15 @@
 	layer = 4.31
 	},
 /obj/effect/decal/fakelattice/passthru,
+/obj/structure/decorative{
+	icon = 'icons/obj/weapons/turrets.dmi';
+	icon_state = "standard_broken";
+	anchored = 1;
+	name = "ancient turret";
+	pixel_y = 4;
+	dir = 10;
+	layer = 4.31
+	},
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "DI" = (
@@ -2946,6 +2939,18 @@
 	name = "saturnX syringe";
 	desc = "A syringe containing some sort of white, gooey substance. Looks reflective."
 	},
+/obj/item/paper/lures_instructions{
+	desc = "A piece of grey paper with a how-to for dummies about making 26th century drugs.";
+	default_raw_text = "SaturnX is a new and modern 26th century drug that makes you turn translucent for a brief duration. <br> To make a fresh batch - or rather a glob - of SaturnX, all you're going to require is: <br> <br> 5u of Lead,<br> 5u of Nothing,<br> 10u Maintenance Tar.<br> <br>The reaction itself doesn't require any heating nor cooling, the reaction will occur instantly.";
+	pixel_x = 10;
+	pixel_y = -5
+	},
+/turf/open/floor/plating,
+/area/ruin/space/has_grav/nova/blackmarket)
+"EF" = (
+/obj/structure/marker_beacon/teal{
+	pixel_x = 16
+	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "EG" = (
@@ -2983,9 +2988,6 @@
 	},
 /area/ruin/space/has_grav/nova/blackmarket)
 "Fc" = (
-/obj/item/thermometer/pen{
-	pixel_y = 31
-	},
 /obj/structure/decorative{
 	anchored = 1;
 	name = "wall segment";
@@ -3000,14 +3002,9 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/uside,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Fh" = (
@@ -3033,7 +3030,6 @@
 /obj/effect/mapping_helpers/airlock/cutaiwire,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/locked,
 /turf/open/floor/iron/shuttle/exploration/doubleside{
 	dir = 4
 	},
@@ -3073,25 +3069,6 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/siding/dark_red/corner,
-/obj/structure/decorative/fluff{
-	name = "broken ammobench";
-	desc = "Wouldn't have ended up here if it worked correctly.";
-	icon_state = "ammobench_t";
-	icon = 'modular_nova/modules/ammo_workbench/icons/ammo_workbench.dmi';
-	anchored = 1;
-	color = "#ecd6c9";
-	density = 1;
-	can_be_unanchored = 1;
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/obj/item/computer_disk{
-	icon_state = "datadisk0";
-	name = "ancient munitions datadisk";
-	desc = "A datadisk filled with old & corrupted munition fabrication data for the ammunition workbench. Rudimentary in the current year.";
-	pixel_x = -6;
-	pixel_y = 4
-	},
 /obj/effect/turf_decal/siding/dark_red/corner{
 	dir = 8
 	},
@@ -3127,14 +3104,14 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/table/glass,
 /obj/effect/turf_decal/delivery/blue,
-/obj/item/defibrillator/loaded,
+/obj/item/defibrillator/loaded{
+	pixel_y = 6
+	},
 /obj/effect/turf_decal/trimline/blue/line{
 	dir = 8
 	},
 /obj/machinery/light/broken/directional/west,
-/turf/open/floor/iron/white/textured_edge{
-	dir = 4
-	},
+/turf/open/floor/iron/white/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Ga" = (
 /obj/structure/table/wood/poker,
@@ -3289,6 +3266,7 @@
 /obj/machinery/chem_master,
 /obj/machinery/light/small/red/dim/directional/south,
 /obj/structure/broken_flooring/plating/directional/east,
+/obj/item/clothing/glasses/science,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Gn" = (
@@ -3408,7 +3386,6 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "Hm" = (
-/obj/structure/closet/body_bag/environmental/nanotrasen,
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 1
 	},
@@ -3417,6 +3394,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/closet/body_bag/environmental/nanotrasen,
 /turf/open/floor/iron/shuttle/exploration/invertcorner{
 	dir = 8
 	},
@@ -3579,9 +3557,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/dark/smooth_edge{
@@ -3607,9 +3582,6 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/dark_green/filled/corner{
@@ -3715,6 +3687,7 @@
 /obj/effect/turf_decal/trimline/dark_red/filled/corner,
 /obj/effect/turf_decal/trimline/dark/corner,
 /obj/effect/turf_decal/siding/dark_red/corner,
+/obj/machinery/holopad,
 /turf/open/floor/iron/shuttle/exploration/invertcorner{
 	dir = 1
 	},
@@ -3731,10 +3704,6 @@
 /turf/closed/wall/r_wall,
 /area/ruin/space/has_grav/nova/blackmarket)
 "KE" = (
-/obj/item/stack/sheet/iron/twenty{
-	pixel_y = -1;
-	pixel_x = -7
-	},
 /obj/item/stack/rods{
 	pixel_x = 7;
 	pixel_y = -9
@@ -3755,6 +3724,7 @@
 /obj/effect/turf_decal/trimline/dark_blue/filled/line,
 /obj/effect/turf_decal/trimline/dark/line,
 /obj/effect/turf_decal/siding/dark_blue/corner,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 1
 	},
@@ -3774,6 +3744,20 @@
 	},
 /turf/closed/wall,
 /area/ruin/space/has_grav/nova/blackmarket)
+"Lu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'icons/obj/weapons/turrets.dmi';
+	icon_state = "standard_broken";
+	anchored = 1;
+	name = "ancient turret";
+	pixel_y = 4;
+	dir = 6;
+	layer = 4.31
+	},
+/obj/effect/decal/fakelattice/passthru,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 "Ly" = (
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 8
@@ -3788,10 +3772,6 @@
 	pixel_x = 2;
 	pixel_y = 20
 	},
-/obj/item/reagent_containers/cup/glass/waterbottle/empty{
-	pixel_y = 16;
-	pixel_x = -8
-	},
 /obj/item/stack/rods,
 /obj/effect/turf_decal/trimline/dark_red/filled/line{
 	dir = 1
@@ -3804,6 +3784,10 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/reagent_containers/cup/glass/waterbottle/relic{
+	pixel_x = -8;
+	pixel_y = 17
+	},
 /turf/open/floor/iron/shuttle/exploration/side,
 /area/ruin/space/has_grav/nova/blackmarket)
 "LE" = (
@@ -3834,6 +3818,14 @@
 	},
 /obj/effect/turf_decal/shuttle/exploration/echidna,
 /obj/machinery/light/small/red/directional/east,
+/obj/structure/decorative{
+	icon = 'icons/obj/tram/tram_controllers.dmi';
+	icon_state = "rectifier";
+	anchored = 1;
+	name = "powerbox";
+	pixel_x = 30;
+	pixel_y = 0
+	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Mb" = (
@@ -3904,6 +3896,13 @@
 	},
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/space/has_grav/nova/blackmarket)
+"Mm" = (
+/obj/structure/transport/linear/tram/corner/southwest{
+	pixel_x = -32;
+	pixel_y = -6
+	},
+/turf/closed/wall/r_wall,
+/area/ruin/space/has_grav/nova/blackmarket)
 "Mr" = (
 /obj/structure/grille,
 /obj/effect/turf_decal/weather/sand{
@@ -3959,12 +3958,6 @@
 /obj/structure/closet/firecloset/wall{
 	pixel_x = -32
 	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 4
-	},
 /turf/open/floor/iron/shuttle/exploration/uside{
 	dir = 4
 	},
@@ -3977,7 +3970,8 @@
 	},
 /obj/item/paper/pamphlet/centcom/visitor_info{
 	pixel_x = 12;
-	pixel_y = 13
+	pixel_y = 13;
+	default_raw_text = "<b> XCC-P5831 Visitor Information </b><br>Greetings, visitor, to  XCC-P5831! As you may know, this outpost was once used as Solar Federation's SHUTTLE DOCKING PORT, organizing and coordinating company flights across the vastness of space. <br>Since the completion of the much more efficient CC-A5831 on February 7, 2523, XCC-P5831 no longer acts as Solar Federation's base of operations but still plays a very important role its corporate affairs; serving as a supply and repair depot.<br> We hope you enjoy your stay!"
 	},
 /obj/item/stack/spacecash/c100{
 	pixel_x = -5;
@@ -3995,9 +3989,6 @@
 	},
 /obj/effect/turf_decal/siding/dark_green/corner,
 /obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/dark_green/corner{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -4009,20 +4000,17 @@
 /area/ruin/space)
 "MT" = (
 /obj/structure/table,
-/obj/item/paper_bin{
-	pixel_x = 5;
-	pixel_y = 8
-	},
-/obj/item/pen/fourcolor{
-	pixel_y = -2;
-	pixel_x = -8
-	},
 /obj/structure/fluff/paper/corner{
 	dir = 8;
 	layer = 2
 	},
 /obj/machinery/light/small/dim/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/phone{
+	pixel_x = -9;
+	pixel_y = 7
+	},
+/obj/effect/spawner/random/weapon/black_market_trader,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 1
 	},
@@ -4148,7 +4136,6 @@
 /obj/effect/turf_decal/trimline/blue/filled/warning{
 	dir = 8
 	},
-/obj/item/reagent_containers/syringe/crude/blastoff,
 /obj/effect/turf_decal/trimline/blue/warning{
 	dir = 8
 	},
@@ -4158,6 +4145,7 @@
 /obj/effect/turf_decal/trimline/white/corner{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/white/textured_edge{
 	dir = 4
 	},
@@ -4226,9 +4214,13 @@
 	pixel_y = -23
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/phone{
-	pixel_x = 2;
-	pixel_y = 7
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/item/pen/fourcolor{
+	pixel_y = -2;
+	pixel_x = -8
 	},
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 4
@@ -4510,6 +4502,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 8
 	},
@@ -4532,6 +4525,20 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/nova/blackmarket)
+"TC" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/decorative{
+	icon = 'icons/obj/weapons/turrets.dmi';
+	icon_state = "standard_broken";
+	anchored = 1;
+	name = "ancient turret";
+	pixel_y = 4;
+	dir = 9;
+	layer = 4.31
+	},
+/obj/effect/decal/fakelattice/passthru,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 "TD" = (
 /obj/effect/turf_decal/trimline/dark_blue/filled/line{
 	dir = 8
@@ -4569,7 +4576,6 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
-/obj/structure/sign/poster/official/terragov/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
@@ -4608,7 +4614,6 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "Vn" = (
-/obj/item/ammo_casing/a357/spent,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/shuttle/exploration/side,
@@ -4777,10 +4782,6 @@
 /obj/effect/turf_decal/trimline/dark/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/siding/dark_green/corner,
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /turf/open/floor/iron/dark/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "WW" = (
@@ -4944,6 +4945,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/iron/shuttle/exploration,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Yc" = (
@@ -5012,6 +5014,10 @@
 /obj/effect/turf_decal/trimline/blue/corner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/item/reagent_containers/syringe/crude/blastoff{
+	pixel_x = 0;
+	pixel_y = 2
+	},
 /turf/open/floor/iron/white/textured_edge{
 	dir = 4
 	},
@@ -5043,9 +5049,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/textured_edge{
-	dir = 8
-	},
+/turf/open/floor/iron/white/textured,
 /area/ruin/space/has_grav/nova/blackmarket)
 "YR" = (
 /obj/effect/turf_decal/siding/wood{
@@ -5069,6 +5073,14 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 9
 	},
+/obj/structure/decorative{
+	icon = 'icons/obj/tram/tram_controllers.dmi';
+	icon_state = "rectifier";
+	anchored = 1;
+	name = "powerbox";
+	pixel_x = 0;
+	pixel_y = 30
+	},
 /turf/open/floor/carpet/black,
 /area/ruin/space/has_grav/nova/blackmarket)
 "Zb" = (
@@ -5078,7 +5090,6 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 8
 	},
@@ -5097,10 +5108,10 @@
 	},
 /area/ruin/space/has_grav/nova/blackmarket)
 "Zt" = (
-/obj/item/storage/bag/trash/filled,
 /obj/structure/sign/departments/med/directional/south,
 /obj/effect/turf_decal/trimline/dark_blue/filled/line,
 /obj/effect/turf_decal/trimline/dark/line,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 1
 	},
@@ -5150,10 +5161,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/dark/corner,
-/obj/effect/turf_decal/siding/dark_green/corner,
-/obj/effect/turf_decal/siding/dark_green/corner{
-	dir = 1
-	},
 /obj/effect/turf_decal/trimline/dark_green/corner{
 	dir = 8
 	},
@@ -5178,16 +5185,14 @@
 /turf/open/floor/iron/dark/small,
 /area/ruin/space/has_grav/nova/blackmarket)
 "ZT" = (
-/obj/structure/fans/tiny/forcefield,
-/obj/machinery/door/poddoor{
-	id = "blackmarket_shuttlebay_poddoors";
-	name = "dusty blast door"
+/obj/structure/flora/rock/pile/style_3,
+/obj/item/stack/sheet/spaceship{
+	pixel_x = -4;
+	pixel_y = -2
 	},
-/obj/structure/marker_beacon/teal{
-	pixel_x = 16
-	},
-/turf/open/floor/plating/reinforced,
-/area/ruin/space/has_grav/nova/blackmarket)
+/obj/effect/decal/fakelattice/passthru,
+/turf/open/misc/asteroid/airless,
+/area/ruin/space)
 
 (1,1,1) = {"
 MA
@@ -5893,12 +5898,12 @@ MA
 tX
 tX
 tX
-Ab
-Ab
+mI
+mI
 tw
-Lc
-Ab
-Ab
+qN
+mI
+mI
 tX
 Te
 MA
@@ -6003,9 +6008,9 @@ tX
 tX
 Ab
 Ab
-Ab
+mI
 tP
-Ab
+mI
 Ab
 jz
 Ab
@@ -6013,8 +6018,8 @@ Ab
 Fp
 Ea
 tX
-Ab
-Ab
+mI
+mI
 Gx
 Jh
 MA
@@ -6050,13 +6055,13 @@ Az
 rm
 ro
 Ab
-tX
-tX
+BD
+BD
 Ab
 Ab
 Ht
 WW
-Dr
+Mm
 MA
 MA
 MA
@@ -6089,14 +6094,14 @@ bP
 tk
 Gs
 TB
-Ab
-tX
+cd
+ZT
 Ab
 jo
 HX
 VH
 vX
-Ab
+mI
 tX
 tX
 MA
@@ -6130,13 +6135,13 @@ zV
 WZ
 Uk
 Ab
-Ab
+cd
 Ab
 MD
 nh
 Wf
 Ab
-Ab
+mI
 tX
 tX
 MA
@@ -6204,7 +6209,7 @@ rw
 yt
 Ab
 dx
-mn
+wF
 Ab
 Bh
 da
@@ -6529,8 +6534,8 @@ au
 Ab
 Ab
 Ab
-Ab
-Ab
+WG
+WG
 Ab
 mI
 mI
@@ -6619,7 +6624,7 @@ Mr
 mI
 bQ
 mI
-GX
+Lu
 MA
 MA
 MA
@@ -6635,7 +6640,7 @@ MA
 MA
 SF
 GX
-cd
+bQ
 ga
 DB
 DB
@@ -6649,16 +6654,16 @@ FK
 FK
 FK
 FK
-FK
+tv
 FK
 FK
 FK
 st
 st
 st
-FK
-cd
-sn
+EF
+bQ
+As
 SF
 MA
 MA
@@ -6675,8 +6680,8 @@ MA
 SF
 IW
 GX
-ZT
-DB
+bQ
+mn
 FK
 FK
 FK
@@ -6697,7 +6702,7 @@ FK
 FK
 FK
 FK
-ZT
+bQ
 GX
 MA
 MA
@@ -6755,7 +6760,8 @@ MA
 SF
 SF
 GX
-ZT
+bQ
+EF
 FK
 FK
 FK
@@ -6776,8 +6782,7 @@ FK
 FK
 FK
 FK
-FK
-ZT
+Bm
 GX
 MA
 MA
@@ -6812,7 +6817,7 @@ FK
 FK
 FK
 FK
-tv
+FK
 FK
 FK
 FK
@@ -6835,7 +6840,7 @@ SF
 MK
 SF
 GX
-ZT
+bQ
 FK
 FK
 FK
@@ -6857,7 +6862,7 @@ FK
 FK
 FK
 FK
-ZT
+bQ
 GX
 MA
 MA
@@ -6915,7 +6920,8 @@ SF
 SF
 SF
 GX
-ZT
+bQ
+EF
 FK
 FK
 FK
@@ -6936,8 +6942,7 @@ FK
 FK
 FK
 FK
-FK
-ZT
+Bm
 GX
 SF
 MA
@@ -6995,7 +7000,7 @@ MA
 SF
 SF
 GX
-ZT
+bQ
 DB
 FK
 FK
@@ -7017,7 +7022,7 @@ FK
 FK
 FK
 FK
-ZT
+bQ
 GX
 SF
 MA
@@ -7036,7 +7041,7 @@ MA
 SF
 UF
 bQ
-DB
+BY
 FK
 FK
 FK
@@ -7056,7 +7061,7 @@ FK
 FK
 FK
 FK
-FK
+EF
 bQ
 GX
 SF
@@ -7074,8 +7079,8 @@ MA
 MA
 MA
 IW
-GX
-ZT
+fB
+bQ
 DB
 Yc
 vH
@@ -7097,7 +7102,7 @@ vH
 vH
 vH
 FK
-ZT
+bQ
 GX
 SF
 SF
@@ -7113,7 +7118,7 @@ MA
 MA
 MA
 SF
-GX
+TC
 mI
 bQ
 mI
@@ -7126,10 +7131,10 @@ JJ
 cr
 mI
 wl
-Mj
+ns
 Mj
 LZ
-ns
+Mj
 Mj
 xW
 mI
